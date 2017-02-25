@@ -1,0 +1,29 @@
+1.Bootstrap
+可以用于响应式开发，为了开发人员创建接口提供了一个简洁同意的解决方案。包含了功能强大的内置组件，易于定制，开源。
+
+2.闭包
+闭包是functional language里面的核心概念。当出现高阶嵌套函数的时候，编辑器会做闭包转换 clsoure convention，核心就是变量不在分配栈 stack上，而是分配在堆 heap上。闭包是定义在函数中的函数，闭包能访问包含函数的变量，及时包含函数执行完了，被闭包的引用变量也得不到释放。因为闭包会使得函数中的变量都被保存在内存中，内存消耗很大，所以不能滥用闭包，否则会造成性能问题。最好是在退出函数之前，将不适用的局部变量全部删除。
+
+3.原型--万物皆对象
+在JavaScript中，原型也是一个对象，通过原型可以实现对象的属性继承，JavaScript的对象中都包含了一个”[[Prototype]]”内部属性，这个属性所对应的就是该对象的原型。“[[Prototype]]”作为对象的内部属性，是不能被直接访问的。所以为了方便查看一个对象的原型，Firefox和Chrome中提供了__proto__这个非标准（不是所有浏览器都支持）的访问器（ECMA引入了标准对象原型访问器”Object.getPrototype(object)”）。在JavaScript的原型对象中，还包含一个”constructor”属性，这个属性对应创建所有指向该原型的实例的构造函数。
+
+4.原型链--生于无而归于无
+因为每个对象和原型都有原型，对象的原型指向原型对象，而父的原型又指向父的父，这种原型层层连接起来的就构成了原型链。
+
+5.jQuery
+jQuery是一个优秀的javascript函数库。励志于write less,do more。是一个快速的简洁的javascript库，能使用户更加方便的处理html,documents,events,实现动画效果，更方便的为网站做ajax交互。jQuery十分轻量化；丰富的dom选择器；链式编程；事件，样式，动画都支持；ajax操作；跨浏览器兼容问题；插件拓展开发；可拓展性强；实现页面和脚本的分离。
+
+6.jQuery Mobile
+JQM的目标是在一个统一的UI中交付javascript功能，跨最流行的智能手机和电脑工作。优雅降级；Accessibility残障人士访问web；体积小；
+
+7.ajax
+ajax即Asynchronous Javascript And XML，是指一种创建交互式网络应用的页面开发技术。AJAX异步 javascript和XML。AJAX是一种用于创建快速动态网页的技术，通过在后台与服务器进行少量数据交换，AJAX可以使网页实现异步更新，这意味着可以在重新加载整个网页的情况下，对网页的某部分进行更新。优点是可以减轻服务器的负担，按需索取数据，最大限度的减少不需要的请求。局部刷新页面，减少用户的心理和等待时间，给用户带来更好的用户体验。缺点就是兼容性
+
+8.json
+JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。它基于ECMAScript的一个子集。 JSON采用完全独立于语言的文本格式，但是也使用了类似于C语言家族的习惯（包括C、C++、C#、Java、JavaScript、Perl、Python等）。这些特性使JSON成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成(一般用于提升网络传输速率)。
+
+9.jsonp
+JSONP(JSON with Padding)是JSON的一种“使用模式”，可用于解决主流浏览器的跨域数据访问的问题。由于同源策略，一般来说位于 server1.example.com 的网页无法与不是 server1.example.com的服务器沟通，而 HTML 的<script> 元素是一个例外。利用 <script> 元素的这个开放策略，网页可以得到从其他来源动态产生的 JSON 资料，而这种使用模式就是所谓的 JSONP。用 JSONP 抓到的资料并不是 JSON，而是任意的JavaScript，用 JavaScript 直译器执行而不是用 JSON 解析器解析。
+
+10.xml
+可扩展标记语言，标准通用标记语言的子集，是一种用于标记电子文件使其具有结构性的标记语言。
